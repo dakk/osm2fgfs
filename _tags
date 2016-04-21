@@ -1,5 +1,5 @@
 # OASIS_START
-# DO NOT EDIT (digest: 252bc946a2e9ca99bd6e36b22d5bfb61)
+# DO NOT EDIT (digest: 842a2920ad4851b04579979b496cdcfa)
 # Ignore VCS directories, you can use the same kind of rule outside
 # OASIS_START/STOP if you want to exclude directories that contains
 # useless stuff for the build process
@@ -15,5 +15,13 @@
 "_darcs": not_hygienic
 # Executable osm2fgfs
 "src/osm2fgfs.byte": pkg_osm_xml
+"src/osm2fgfs.byte": pkg_threads
+"src/osm2fgfs.byte": pkg_core
+"src/osm2fgfs.byte": pkg_xmlm
+"src/osm2fgfs.byte": pkg_inspect
 <src/*.ml{,i}>: pkg_osm_xml
+<src/*.ml{,i}>: pkg_threads
+<src/*.ml{,i}>: pkg_core
+<src/*.ml{,i}>: pkg_xmlm
+<src/*.ml{,i}>: pkg_inspect
 # OASIS_STOP
