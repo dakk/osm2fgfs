@@ -1,0 +1,16 @@
+opam-version: "1.2"
+name: "osm2fgfs"
+version: "0.0.1"
+maintainer: "Davide Gessa <gessadavide@gmail.com>"
+authors: "Davide Gessa <gessadavide@gmail.com>"
+homepage: "http://github.com/dakk"
+bug-reports: "http://github.com/dakk"
+license: "MIT"
+dev-repo: "http://github.com/dakk/osm2fgfs"
+build: [
+  ["./configure" "--prefix=%{prefix}%"]
+  [make]
+]
+install: [make "install"]
+remove: ["ocamlfind" "remove" "osm2fgfs"]
+depends: "osm_xml"

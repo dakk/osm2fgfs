@@ -1,0 +1,15 @@
+OASISFormat: 0.4
+Name:        osm2fgfs
+Version:     0.0.1
+Synopsis:    Tool to convert openstreetmap data to flightgear object
+  placement file
+Authors:     Davide Gessa
+License:     BSD3
+Plugins:     META (0.4) DevFiles (0.4)
+BuildDepends: osm_xml, threads, core, xmlm
+
+Executable osm2fgfs
+  Path:       src
+  BuildTools: ocamlbuild
+  MainIs:     osm2fgfs.ml
+  BuildDepends: osm_xml
